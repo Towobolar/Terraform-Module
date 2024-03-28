@@ -1,15 +1,5 @@
-variable "vpc_cidr" {
-  description = "vpc cidr"
-  type        = string
-}
-
-variable "vpc_name" {
-  description = "vpc name"
-  type        = string
-}
-
 variable "security_group_name" {
-  description = "security group"
+  description = "security group name"
   type = string
 }
 
@@ -25,23 +15,25 @@ variable "ingress_protocol" {
 
 variable "ingress_from_port" {
   description = "ingress from port"
-  type = string
+  type = number
 }
 
 variable "ingress_to_port" {
   description = "ingress to port"
-  type = string
+  type = number
 }
 
 variable "egress_from_port" {
   description = "egress from port"
-  type = string
+  type = number
 }
+
 
 variable "egress_to_port" {
   description = "egress from port"
-  type = string
+  type = number
 }
+
 
 variable "egress_protocol" {
   description = "egress protocol value"
